@@ -1,5 +1,5 @@
 {
-	"name": "task-api-intern-task",
+	"name": "@task/api",
 	"version": "1.0.0",
 	"description": "Task Management API built with Express, TypeScript and MongoDB",
 	"main": "dist/server.js",

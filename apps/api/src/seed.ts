@@ -13,7 +13,7 @@ const seed = async (): Promise<void> => {
 	await UserModel.deleteMany({});
 	const created = await UserModel.insertMany(users);
 	created.forEach((u) => logger.info(`Seeded user ${u.name}: ${u._id}`));
-	await disconnectDatabase();	
+	await disconnectDatabase();
 };
 
 seed().catch((err) => {
