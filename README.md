@@ -8,7 +8,7 @@
 ## Setup
 
 ```bash
-yarn install
+pnpm install
 cp .env.example .env   # then adjust values if needed
 ```
 
@@ -24,19 +24,19 @@ Environment variables:
 ## Scripts
 
 ```bash
-yarn dev            # run in watch mode with ts-node
-yarn build          # compile TypeScript to dist/
-yarn start          # run the compiled build
-yarn seed           # insert sample users for testing
-yarn lint           # run ESLint
-yarn format         # format with Prettier
+pnpm dev            # run in watch mode with ts-node
+pnpm build          # compile TypeScript to dist/
+pnpm start          # run the compiled build
+pnpm seed           # insert sample users for testing
+pnpm lint           # run ESLint
+pnpm format         # format with Prettier
 ```
 
 ## Running
 
 ```bash
-yarn seed     # optional: create sample users
-yarn dev
+pnpm seed     # optional: create sample users
+pnpm dev
 ```
 
 - API base: `http://localhost:3000`

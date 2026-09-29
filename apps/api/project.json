@@ -5,19 +5,19 @@
     "dev": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "yarn workspace @task/api dev"
+        "command": "pnpm --filter @task/api dev"
       }
     },
     "build": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "yarn workspace @task/api build"
+        "command": "pnpm --filter @task/api build"
       }
     },
     "lint": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "yarn workspace @task/api lint"
+        "command": "pnpm --filter @task/api lint"
       }
     }
   }

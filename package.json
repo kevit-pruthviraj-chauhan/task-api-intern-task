@@ -1,26 +1,23 @@
 {
 	"name": "task-api-intern-task",
 	"private": true,
-	"workspaces": [
-		"apps/*",
-		"packages/*"
-	],
 	"scripts": {
 		"dev": "nx run-many -t dev --projects=api,web --parallel",
 		"build": "nx run-many -t build --projects=api,web --parallel",
-		"start": "yarn workspace @task/api start",
-		"seed": "yarn workspace @task/api seed",
+		"start": "pnpm --filter @task/api start",
+		"seed": "pnpm --filter @task/api seed",
 		"lint": "nx run-many -t lint --projects=api,web --parallel",
-		"lint:fix": "yarn workspace @task/api lint:fix",
-		"format": "yarn workspace @task/api format",
-		"format:check": "yarn workspace @task/api format:check",
-		"dev:api": "yarn workspace @task/api dev",
-		"dev:web": "yarn workspace @task/web dev",
-		"build:api": "yarn workspace @task/api build",
-		"build:web": "yarn workspace @task/web build",
-		"lint:web": "yarn workspace @task/web lint"
+		"lint:fix": "pnpm --filter @task/api lint:fix",
+		"format": "pnpm --filter @task/api format",
+		"format:check": "pnpm --filter @task/api format:check",
+		"dev:api": "pnpm --filter @task/api dev",
+		"dev:web": "pnpm --filter @task/web dev",
+		"build:api": "pnpm --filter @task/api build",
+		"build:web": "pnpm --filter @task/web build",
+		"lint:web": "pnpm --filter @task/web lint"
 	},
 	"devDependencies": {
 		"nx": "^23.2.1"
-	}
+	},
+	"packageManager": "pnpm@12.6.0"
 }
